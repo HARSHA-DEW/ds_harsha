@@ -63,6 +63,8 @@ ds_harsha/
 **Summary:** Traders are more active and aggressive during Greed, but increased risk does not always generate higher profits.
 
 ---
+## 🔗 Google Colab Notebook
+https://colab.research.google.com/github/HARSHA-DEW/ds_harsha/blob/main/notebook_1.ipynb
 
 ## 💡 **Recommendations**
 
@@ -84,3 +86,4 @@ _Data Science Enthusiast_
 ---
 
 ### ⭐ If you like this project, consider giving the repo a **Star** on GitHub!
+
