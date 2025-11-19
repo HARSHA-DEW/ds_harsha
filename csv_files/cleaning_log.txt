@@ -1,0 +1,19 @@
+2025-11-19T13:00:42.065542  -  Loaded raw trader (10, 10) and raw sentiment (10, 2)
+2025-11-19T13:06:38.405349  -  Normalized column names to snake_case
+2025-11-19T13:08:03.568289  -  Generated info() and missing value summary for trader and sentiment
+2025-11-19T13:08:34.550712  -  Parsed sentiment 'date', nulls after parse: 0
+2025-11-19T13:08:34.552894  -  Parsed trader 'time' from column 'time'
+2025-11-19T13:08:34.555688  -  Numeric conversion done for: ['closedpnl', 'size', 'leverage', 'execution_price']
+2025-11-19T13:10:41.454396  -  Trimmed string columns: account, symbol, side, event (when present)
+2025-11-19T13:10:50.883529  -  Dropped duplicates: before=10, after=10, dropped=0
+2025-11-19T13:10:58.353612  -  Dropped 0 rows due to missing time
+2025-11-19T13:10:58.361106  -  Imputed leverage with symbol-level median then global median
+2025-11-19T13:10:58.362262  -  Filled 0 missing 'size' values with 0
+2025-11-19T13:20:20.300802  -  Created derived columns: pnl_positive, abs_size, risk_score, hour, standardized date
+2025-11-19T13:20:33.134936  -  Cleaned sentiment classification and dropped rows with missing date/classification
+2025-11-19T13:20:47.468392  -  Capped leverage at 99th percentile: 10.0
+2025-11-19T13:20:57.348414  -  Prepared trader_clean with columns: ['account', 'symbol', 'time', 'date', 'hour', 'side', 'size', 'abs_size', 'execution_price', 'closedpnl', 'pnl_positive', 'leverage', 'risk_score', 'event']
+2025-11-19T13:21:10.405728  -  Saved cleaned trader -> csv_files/cleaned_trader_data.csv
+2025-11-19T13:21:10.406471  -  Saved cleaned sentiment -> csv_files/cleaned_sentiment.csv
+2025-11-19T13:21:52.984691  -  Saved merged data -> csv_files/merged_data.csv with shape (10, 15)
+2025-11-19T13:22:09.418667  -  Final validation checks passed
